@@ -17,4 +17,4 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-east-1
     - name: Deploy code to S3 bucket
-      run: aws s3 sync ./glue/ s3://aws-glue-scripts-375004267898-us-east-1/root/
+      run: aws s3 sync ./glue/ ${{ secrets.AWS_S3_BUCKET }}
