@@ -19,4 +19,4 @@ jobs:
     - name: Deploy code to S3 bucket
       run: aws s3 sync ./glue/ ${{ secrets.AWS_S3_BUCKET }}
     - name: Deploy variables DynamoDB
-      run: aws dynamodb put-item --table-name etl-metadata --item '{"key": {"S": "test_variable"}, "value": {"S": "Testing actions"}}'
+      run: aws dynamodb get-item --table-name etl-metadata --key last_run 
