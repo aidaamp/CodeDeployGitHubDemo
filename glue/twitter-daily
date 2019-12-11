@@ -139,8 +139,8 @@ joined_df = joined_df.select(col("id_str").alias("tweet_id"),
                             unix_timestamp("created_at", timestampFormat).cast(TimestampType()).alias("created_at"),
                             col("extracted_at")
                         )
-print(joined_df.printSchema())
-print(joined_df.cache().count())
+#print(joined_df.printSchema())
+#print(joined_df.cache().count())
 
 # (dataframe0.write
 #         .format("com.databricks.spark.redshift")
