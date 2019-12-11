@@ -1,0 +1,132 @@
+{
+    "etl-metadata": [
+        {
+            "PutRequest": {
+                "Item": {
+                    "key": {"S": "legacy_copy_role"},
+                    "value": {"S": "arn:aws:iam::112459596016:role/redshift_s3_access"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "key": {"S": "legacy_unload_role"},
+                    "value": {"S": "arn:aws:iam::112459596016:role/redshift_s3_write"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "key": {"S": "legacy_redshift_url"},
+                    "value": {"S": "jdbc:redshift://fruition-redshift-prod.cqfzrvraovv5.us-east-1.redshift.amazonaws.com:5439/fruition"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "key": {"S": "api_endpoint_attempt"},
+                    "value": {"S": "http://isn.contentservice.net/attemptimport/v1"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "key": {"S": "api_endpoint_file"},
+                    "value": {"S": "http://isn.contentservice.net/fileimport/v1"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "key": {"S": "api_endpoint_user"},
+                    "value": {"S": "http://isn.contentservice.net/userimport/v1"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "key": {"S": "copy_role"},
+                    "value": {"S": "arn:aws:iam::590678610126:role/juicebox_redshift_copy_role"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "key": {"S": "unload_role"},
+                    "value": {"S": "arn:aws:iam::590678610126:role/juicebox_redshift_unload_role"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "key": {"S": "laerdal_api_user"},
+                    "value": {"S": "juice-production"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "key": {"S": "redshift_host"},
+                    "value": {"S": "juicebox.cw3u44iqlgtv.us-east-1.redshift.amazonaws.com"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "key": {"S": "redshift_url"},
+                    "value": {"S": "jdbc:redshift://juicebox.cw3u44iqlgtv.us-east-1.redshift.amazonaws.com:5439/juicebox"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "key": {"S": "hstm_copy_role"},
+                    "value": {"S": "arn:aws:iam::424573153921:role/ControlCenter-ETL-Role"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "key": {"S": "hstm_qa_redshift_url"},
+                    "value": {"S": "jdbc:redshift://hstm-qa.cvyxj84xn1m8.us-east-1.redshift.amazonaws.com:5439/cc"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "key": {"S": "hstm_redshift_url"},
+                    "value": {"S": "jdbc:redshift://hstm-prod.cvyxj84xn1m8.us-east-1.redshift.amazonaws.com:5439/cc"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "key": {"S": "last_run_attempts"},
+                    "value": {"S": "'2019-03-25'"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "key": {"S": "last_run_assignments"},
+                    "value": {"S": "2019-03-25"}
+                }
+            }
+        }
+    ]
+}
