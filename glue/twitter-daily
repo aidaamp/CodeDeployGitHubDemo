@@ -1,4 +1,4 @@
-# Update glue job 7
+# Update glue job with webhooks
 
 import boto3
 import json
